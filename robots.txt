@@ -1,0 +1,8 @@
+# robots.txt — Ezenwa Joseph Chibuzo Portfolio
+# https://josephchibuzo-dev.github.io/portfolio/
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://josephchibuzo-dev.github.io/portfolio/sitemap.xml

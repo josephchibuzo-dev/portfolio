@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- Primary Meta -->
+  <title>About — Ezenwa Joseph Chibuzo | Frontend Developer</title>
+  <meta name="description" content="Learn about Ezenwa Joseph Chibuzo — a passionate Frontend Developer from Nigeria with expertise in HTML, CSS, JavaScript and React." />
+  <meta name="author" content="Ezenwa Joseph Chibuzo" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://josephchibuzo-dev.github.io/portfolio/about.html" />
+  <meta property="og:title" content="About — Ezenwa Joseph Chibuzo" />
+  <meta property="og:description" content="Passionate Frontend Developer from Nigeria. HTML, CSS, JavaScript, React." />
+  <meta property="og:image" content="https://josephchibuzo-dev.github.io/portfolio/og-image.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="About — Ezenwa Joseph Chibuzo" />
+  <meta name="twitter:description" content="Passionate Frontend Developer from Nigeria. HTML, CSS, JavaScript, React." />
+  <meta name="twitter:creator" content="@ezenwa_dev" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="apple-touch-icon" href="favicon.svg" />
+  <meta name="theme-color" content="#ff6b35" />
+  <link rel="canonical" href="https://josephchibuzo-dev.github.io/portfolio/about.html" />
+
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/loader.css" />
+  <link rel="stylesheet" href="css/about.css" />
+  <link rel="stylesheet" href="css/image.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- PAGE LOADER -->
+  <div class="page-loader" id="pageLoader">
+    <div class="loader-logo">EJC.</div>
+    <div class="loader-bar-track"><div class="loader-bar-fill"></div></div>
+  </div>
+
+  <div class="cursor" style="display:none"></div>
+  <div class="cursor-follower" style="display:none"></div>
+
+  <nav class="nav" id="navbar">
+    <a href="index.html" class="nav-logo">EJC<span class="dot">.</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a href="contact.html" class="nav-cta">Hire Me</a>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="index.html" onclick="closeMobile()">Home</a></li>
+      <li><a href="about.html" onclick="closeMobile()">About</a></li>
+      <li><a href="projects.html" onclick="closeMobile()">Projects</a></li>
+      <li><a href="skills.html" onclick="closeMobile()">Skills</a></li>
+      <li><a href="contact.html" onclick="closeMobile()">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero-bg"></div>
+    <div class="container">
+      <span class="section-label animate-in" style="--delay:0.1s">Who I Am</span>
+      <h1 class="page-hero-title animate-in" style="--delay:0.2s">About <span style="color:var(--clr-accent1)">Me</span></h1>
+      <p class="page-hero-sub animate-in" style="--delay:0.35s">Developer. Creator. Problem Solver. Lifelong learner with a passion for the web.</p>
+    </div>
+  </section>
+
+  <!-- INTRO -->
+  <section class="about-intro">
+    <div class="container about-grid">
+      <div class="about-photo-col reveal">
+        <div class="photo-frame">
+          <div class="photo-placeholder">
+            <!-- REPLACE THIS BLOCK WITH YOUR PHOTO:
+                 1. Create an "images" folder inside your portfolio folder
+                 2. Put your photo in it (e.g. photo.jpg)
+                 3. Delete the div below and replace with:
+                    <img src="images/photo.jpg" alt="Ezenwa Joseph Chibuzo" />
+            -->
+            <div class="photo-box" style="padding:0; overflow:hidden;" >
+              <!-- <div class="photo-icon">📷</div> -->
+              <img src="images/photo.jpg" alt="Ezenwa Joseph Chibuzo" style="width:100%; height:100%; object-fit:cover;"/>
+              <!-- <span>Replace with your &lt;img&gt; tag</span> -->
+            </div>
+            <div class="photo-glow"></div>
+          </div>
+          <div class="photo-badge">
+            <span class="badge-icon">💻</span>
+            <div>
+              <strong>Frontend Dev</strong>
+              <span>HTML · CSS · JS · React</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-text-col reveal" style="--delay:0.15s">
+        <span class="section-label">My Story</span>
+        <h2 class="about-heading">
+          Turning ideas into<br>
+          <span class="about-heading-accent">digital experiences</span>
+        </h2>
+        <p>Hi, I'm <strong>Ezenwa Joseph Chibuzo</strong> — a passionate Frontend Developer from Nigeria with a sharp eye for design and a deep love for writing clean, efficient code.</p>
+        <p>I started my journey with HTML and CSS, fascinated by the ability to create something visual from nothing but text. That curiosity evolved into a full-blown passion for building complete, interactive user interfaces using modern JavaScript and React.</p>
+        <p>I believe great frontend development sits at the intersection of <em>aesthetics and logic</em> — beautiful interfaces that also work perfectly under the hood. Whether it's a blazing-fast landing page or a complex React dashboard, I bring the same level of care and craft to every project.</p>
+
+        <div class="about-highlights">
+          <div class="highlight-item">
+            <span class="highlight-icon">🎯</span>
+            <div>
+              <strong>Detail Oriented</strong>
+              <span>Pixel-perfect execution on every project</span>
+            </div>
+          </div>
+          <div class="highlight-item">
+            <span class="highlight-icon">⚡</span>
+            <div>
+              <strong>Performance First</strong>
+              <span>Fast-loading, optimized experiences</span>
+            </div>
+          </div>
+          <div class="highlight-item">
+            <span class="highlight-icon">📱</span>
+            <div>
+              <strong>Responsive by Default</strong>
+              <span>Flawless on every screen size</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-actions">
+          <a href="contact.html" class="btn btn-primary">Get In Touch <span class="btn-arrow">→</span></a>
+          <a href="#" class="btn btn-ghost" download>Download CV</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TIMELINE -->
+  <section class="timeline-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Journey</span>
+        <h2 class="section-title">My <span class="highlight">Timeline</span></h2>
+        <p class="section-sub">The path that led me here — milestones, learning & growth.</p>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2021</div>
+          <div class="timeline-content">
+            <h3>The Beginning</h3>
+            <p>Wrote my very first HTML file. A simple "Hello World" that changed everything. Got obsessed with styling with CSS and making things look good in the browser.</p>
+            <div class="timeline-tags"><span>HTML</span><span>CSS</span></div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal" style="--delay:0.1s">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2022</div>
+          <div class="timeline-content">
+            <h3>JavaScript Deep Dive</h3>
+            <p>Committed fully to JavaScript — DOM manipulation, async/await, APIs, ES6+. Built my first dynamic web projects and discovered the real power of the browser.</p>
+            <div class="timeline-tags"><span>JavaScript</span><span>DOM</span><span>APIs</span></div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal" style="--delay:0.2s">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">2023</div>
+          <div class="timeline-content">
+            <h3>React & Modern Frontend</h3>
+            <p>Entered the React ecosystem — components, hooks, state management, React Router. Started building multi-page apps and understanding how modern web apps are architected.</p>
+            <div class="timeline-tags"><span>React</span><span>Hooks</span><span>SPA</span></div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal" style="--delay:0.3s">
+          <div class="timeline-dot active"></div>
+          <div class="timeline-date">2024 →</div>
+          <div class="timeline-content">
+            <h3>Professional Projects & Growth</h3>
+            <p>Taking on real-world projects, freelance work and building a portfolio to showcase my skills. Continuously expanding — Next.js, TypeScript, and performance optimization are next.</p>
+            <div class="timeline-tags"><span>Freelance</span><span>React</span><span>Next.js (Learning)</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VALUES -->
+  <section class="values-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">What Drives Me</span>
+        <h2 class="section-title">My <span class="highlight">Values</span></h2>
+      </div>
+      <div class="values-grid">
+        <div class="value-card reveal">
+          <div class="value-icon" style="background: rgba(255,107,53,0.15); color: var(--clr-accent1);">🔥</div>
+          <h3>Passion</h3>
+          <p>I genuinely love building things for the web. It's not just a job — it's how I think and create.</p>
+        </div>
+        <div class="value-card reveal" style="--delay:0.1s">
+          <div class="value-icon" style="background: rgba(124,58,237,0.15); color: var(--clr-accent2);">🎨</div>
+          <h3>Craft</h3>
+          <p>Every pixel, every interaction, every line of code — I care about the quality of what I make.</p>
+        </div>
+        <div class="value-card reveal" style="--delay:0.2s">
+          <div class="value-icon" style="background: rgba(0,212,255,0.15); color: var(--clr-accent3);">🚀</div>
+          <h3>Growth</h3>
+          <p>The web never stops evolving, and neither do I. Continuous learning is a core part of my practice.</p>
+        </div>
+        <div class="value-card reveal" style="--delay:0.3s">
+          <div class="value-icon" style="background: rgba(0,232,122,0.15); color: var(--clr-accent5);">🤝</div>
+          <h3>Collaboration</h3>
+          <p>The best products come from open communication, shared vision and working together effectively.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <a href="index.html" class="footer-logo">EJC<span>.</span></a>
+        <p>Frontend Developer based in Nigeria.<br>Building the web, one component at a time.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Pages</h4>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-social">
+        <h4>Connect</h4>
+        <a href="https://github.com/josephchibuzo-dev" target="_blank">GitHub</a>
+        <a href="www.linkedin.com/in/chibuzo-joseph25" target="_blank">LinkedIn</a>
+        <a href="#" target="_blank">Twitter / X</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 Ezenwa Joseph Chibuzo. Designed & built with ❤️</p>
+    </div>
+  </footer>
+
+  <script src="js/loader.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

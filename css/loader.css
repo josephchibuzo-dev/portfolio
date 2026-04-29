@@ -1,0 +1,52 @@
+/* =============================================
+   PAGE LOADER
+   ============================================= */
+.page-loader {
+  position: fixed;
+  inset: 0;
+  background: var(--clr-bg);
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 24px;
+  transition: opacity 0.5s var(--ease), visibility 0.5s;
+}
+.page-loader.hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.loader-logo {
+  font-family: 'Syne', sans-serif;
+  font-weight: 800;
+  font-size: 2.5rem;
+  letter-spacing: -0.04em;
+  background: linear-gradient(135deg, #ff6b35, #7c3aed);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: loaderPulse 1.2s ease-in-out infinite;
+}
+@keyframes loaderPulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.6; transform: scale(0.97); }
+}
+.loader-bar-track {
+  width: 160px;
+  height: 2px;
+  background: rgba(255,255,255,0.06);
+  border-radius: 2px;
+  overflow: hidden;
+}
+.loader-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #ff6b35, #7c3aed);
+  border-radius: 2px;
+  animation: loaderBar 1s ease-in-out forwards;
+}
+@keyframes loaderBar {
+  from { width: 0; }
+  to { width: 100%; }
+}

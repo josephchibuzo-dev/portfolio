@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Projects — Ezenwa Joseph Chibuzo | Frontend Developer</title>
+  <meta name="description" content="Explore projects built by Ezenwa Joseph Chibuzo — e-commerce UIs, dashboards, landing pages and more using React, HTML, CSS and JavaScript." />
+  <meta name="author" content="Ezenwa Joseph Chibuzo" />
+  <meta name="robots" content="index, follow" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://josephchibuzo-dev.github.io/portfolio/projects.html" />
+  <meta property="og:title" content="Projects — Ezenwa Joseph Chibuzo" />
+  <meta property="og:description" content="Real projects built with React, HTML, CSS and JavaScript." />
+  <meta property="og:image" content="https://josephchibuzo-dev.github.io/portfolio/og-image.png" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Projects — Ezenwa Joseph Chibuzo" />
+  <meta name="twitter:creator" content="@ezenwa_dev" />
+
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="apple-touch-icon" href="favicon.svg" />
+  <meta name="theme-color" content="#ff6b35" />
+  <link rel="canonical" href="https://josephchibuzo-dev.github.io/portfolio/projects.html" />
+
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/loader.css" />
+  <link rel="stylesheet" href="css/projects.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- PAGE LOADER -->
+  <div class="page-loader" id="pageLoader">
+    <div class="loader-logo">EJC.</div>
+    <div class="loader-bar-track"><div class="loader-bar-fill"></div></div>
+  </div>
+
+  <div class="cursor" style="display:none"></div>
+  <div class="cursor-follower" style="display:none"></div>
+
+  <nav class="nav" id="navbar">
+    <a href="index.html" class="nav-logo">EJC<span class="dot">.</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a href="contact.html" class="nav-cta">Hire Me</a>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="index.html" onclick="closeMobile()">Home</a></li>
+      <li><a href="about.html" onclick="closeMobile()">About</a></li>
+      <li><a href="projects.html" onclick="closeMobile()">Projects</a></li>
+      <li><a href="skills.html" onclick="closeMobile()">Skills</a></li>
+      <li><a href="contact.html" onclick="closeMobile()">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero-bg" style="background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(255,107,53,0.15) 0%, transparent 70%);"></div>
+    <div class="container">
+      <span class="section-label animate-in" style="--delay:0.1s">My Work</span>
+      <h1 class="page-hero-title animate-in" style="--delay:0.2s">
+        <span style="color:var(--clr-accent1)">Projects</span> &amp; Builds
+      </h1>
+      <p class="page-hero-sub animate-in" style="--delay:0.35s">Real projects. Real code. Here's what I've built from scratch.</p>
+    </div>
+  </section>
+
+  <!-- FILTER + GRID -->
+  <section class="projects-section">
+    <div class="container">
+      <!-- Filter Tabs -->
+      <div class="filter-bar reveal">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="react">React</button>
+        <button class="filter-btn" data-filter="html-css">HTML/CSS</button>
+        <button class="filter-btn" data-filter="javascript">JavaScript</button>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="projects-full-grid" id="projectsGrid">
+
+        <div class="pcard reveal" data-cat="react">
+          <div class="pcard-header" style="--grad: linear-gradient(135deg, #ff6b35, #7c3aed)">
+            <div class="pcard-num">01</div>
+            <div class="pcard-links">
+              <a href="#" class="plink" title="GitHub" target="_blank">
+                <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+              <a href="#" class="plink" title="Live Demo" target="_blank">↗</a>
+            </div>
+          </div>
+          <div class="pcard-body">
+            <span class="pcard-tag">E-Commerce · React</span>
+            <h3>ShopFlow UI</h3>
+            <p>A fully responsive e-commerce interface built with React. Features include product filtering, cart management, wishlist, and smooth animations throughout. Custom CSS with no UI library.</p>
+            <div class="pcard-stack">
+              <span>React</span><span>CSS Modules</span><span>LocalStorage</span><span>React Router</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="pcard reveal" data-cat="react" style="--delay:0.05s">
+          <div class="pcard-header" style="--grad: linear-gradient(135deg, #7c3aed, #00d4ff)">
+            <div class="pcard-num">02</div>
+            <div class="pcard-links">
+              <a href="#" class="plink" target="_blank">
+                <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+              <a href="#" class="plink" target="_blank">↗</a>
+            </div>
+          </div>
+          <div class="pcard-body">
+            <span class="pcard-tag">Dashboard · React</span>
+            <h3>DataViz Dashboard</h3>
+            <p>Admin analytics dashboard with charts, tables, dark mode, and sidebar navigation. Data visualization using Chart.js and fully responsive grid layout.</p>
+            <div class="pcard-stack">
+              <span>React</span><span>Chart.js</span><span>CSS Grid</span><span>Dark Mode</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="pcard reveal" data-cat="html-css" style="--delay:0.1s">
+          <div class="pcard-header" style="--grad: linear-gradient(135deg, #059669, #00d4ff)">
+            <div class="pcard-num">03</div>
+            <div class="pcard-links">
+              <a href="#" class="plink" target="_blank">
+                <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+              <a href="#" class="plink" target="_blank">↗</a>
+            </div>
+          </div>
+          <div class="pcard-body">
+            <span class="pcard-tag">Landing Page · HTML/CSS</span>
+            <h3>SaaS Launch Page</h3>
+            <p>High-converting SaaS landing page with hero section, feature blocks, pricing table, testimonials and animated CTA. Fully hand-coded, zero frameworks.</p>
+            <div class="pcard-stack">
+              <span>HTML5</span><span>CSS3</span><span>Animations</span><span>Responsive</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="pcard reveal" data-cat="javascript" style="--delay:0.15s">
+          <div class="pcard-header" style="--grad: linear-gradient(135deg, #ffd700, #ff6b35)">
+            <div class="pcard-num">04</div>
+            <div class="pcard-links">
+              <a href="#" class="plink" target="_blank">
+                <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+              <a href="#" class="plink" target="_blank">↗</a>
+            </div>
+          </div>
+          <div class="pcard-body">
+            <span class="pcard-tag">App · JavaScript</span>
+            <h3>Task Master App</h3>
+            <p>Feature-rich task management app with categories, drag & drop reordering, localStorage persistence and a clean UI. Pure vanilla JavaScript.</p>
+            <div class="pcard-stack">
+              <span>JavaScript</span><span>Drag & Drop API</span><span>LocalStorage</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="pcard reveal" data-cat="react" style="--delay:0.2s">
+          <div class="pcard-header" style="--grad: linear-gradient(135deg, #ec4899, #7c3aed)">
+            <div class="pcard-num">05</div>
+            <div class="pcard-links">
+              <a href="#" class="plink" target="_blank">
+                <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+              <a href="#" class="plink" target="_blank">↗</a>
+            </div>
+          </div>
+          <div class="pcard-body">
+            <span class="pcard-tag">Portfolio · React</span>
+            <h3>Creative Agency Site</h3>
+            <p>Multi-page agency website with animated hero, service cards, team section, and contact form. Includes React Router and scroll-triggered animations.</p>
+            <div class="pcard-stack">
+              <span>React</span><span>React Router</span><span>GSAP</span><span>CSS</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="pcard reveal" data-cat="html-css" style="--delay:0.25s">
+          <div class="pcard-header" style="--grad: linear-gradient(135deg, #00e87a, #00d4ff)">
+            <div class="pcard-num">06</div>
+            <div class="pcard-links">
+              <a href="#" class="plink" target="_blank">
+                <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+              <a href="#" class="plink" target="_blank">↗</a>
+            </div>
+          </div>
+          <div class="pcard-body">
+            <span class="pcard-tag">Restaurant Site · HTML/CSS</span>
+            <h3>Gourmet Restaurant Site</h3>
+            <p>Elegant restaurant website with menu gallery, reservation section, and immersive scroll effects. Custom typography and CSS variable theming throughout.</p>
+            <div class="pcard-stack">
+              <span>HTML5</span><span>CSS Custom Props</span><span>JS</span><span>Scroll Effects</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="no-results hidden" id="noResults">
+        <span>🔍</span>
+        <p>No projects in this category yet — check back soon!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <a href="index.html" class="footer-logo">EJC<span>.</span></a>
+        <p>Frontend Developer based in Nigeria.<br>Building the web, one component at a time.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Pages</h4>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-social">
+        <h4>Connect</h4>
+        <a href="https://github.com/josephchibuzo-dev" target="_blank">GitHub</a>
+        <a href="www.linkedin.com/in/chibuzo-joseph25" target="_blank">LinkedIn</a>
+        <a href="#" target="_blank">Twitter / X</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 Ezenwa Joseph Chibuzo. Designed & built with ❤️</p>
+    </div>
+  </footer>
+
+  <script src="js/loader.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/projects.js"></script>
+</body>
+</html>
